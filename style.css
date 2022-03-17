@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%
+}
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.8rem;
+}
+main {
+	position: relative;
+}
+header {
+	width: 100%;
+	background: url(./images/pattern-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 13rem;
+	text-align: center;
+}
+.header-container {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 5rem;
+}
+header h1 {
+	font-size: 3rem;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 5rem;
+}
+header input {
+	border: none;
+	outline:  none;
+	padding: 2rem;
+	width: 100%;
+	border-radius: 10px;
+	font-size:  1.8rem;
+	cursor: pointer;
+}
+button {
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.arrow-icon {
+	margin-left: -50px;
+	background-color: hsl(0, 0%, 59%);
+	width: 65px;
+	padding: 2rem;
+	cursor: pointer;
+	height: 65px;
+}
+
+.result-container {
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	margin: 0 auto;
+	padding: 3rem 1.5rem;
+	background-color: #fff;
+	border-radius: 10px;
+	transform: translate(32%, -50%);
+	z-index: 10;
+	position: absolute;
+}
+.result-headings {
+	color: hsl(0, 0%, 59%);
+	text-transform: uppercase;
+	letter-spacing: 1.5;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+.result-outcome {
+	color: hsl(0, 0%, 17%);
+	font-size: 3rem;
+}
+
+/***MAP SECTION****/
+.map-section {
+	position: relative;
+	width: 100%;
+	margin:  0 auto;
+	z-index: 1;
+}
+#map {
+	height: 50vh;
+}
+.running-popup {
+	color: black;
+	border-radius: 10px;
+	background-color: pink;
+	padding: 1rem;
+}
+
+.attribution { 
+	font-size: 11px; 	
+	text-align: center; 
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+@media only screen and (max-width: 80em) {
+	html {
+		font-size: 50%;
+	}
+}
+@media only screen  and (max-width:  50em) {
+	html {
+		font-size: 50%;
+	}
+	header {
+		padding-bottom: 20rem;
+	}
+	.arrow-icon {
+		height: 55px;
+		width: 55px;
+	}
+	
+	.result-container {
+		flex-direction: column;
+		align-items: center;
+		gap:  1.5rem;
+		text-align: center;
+	}
+	.local-postal {
+		display: flex;
+	}
+}
+
+@media only screen and (max-width:  37em) {
+	html {
+		font-size: 40%;
+	}
+	body {
+		width: 375px;
+	}
+	button {
+		width: 80%;
+	}
+	header input {
+		padding: 3rem;
+	}
+	#map {
+	height: 60vh;
+	}
+}
