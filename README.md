@@ -13,7 +13,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
    - [Continued development](#continued-development)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
